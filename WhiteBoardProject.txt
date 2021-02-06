@@ -1,0 +1,35 @@
+Check for uniqueness
+Algorithm to determine if elements of string are unique
+No array methods
+Boolean(true/false return)
+
+input: "hello"
+Output: false
+input: "copyright"
+Output: true
+input: "abba"
+output: false
+input: "whiteboard"
+output: true
+
+- Create an empty string
+- Loop through the chacters of a string, insert characters from input into empty string if they are unique
+ - Compare input string with the string I've created that represents only unique letters.
+
+function uniqueCheck(string){
+  let checkString = "";
+  for(i=0; i < string.length; i++) {
+    if(checkString.includes(string[i]) {
+    } else {
+      checkString += string[i]
+    }
+  }
+
+  if (string != checkString){
+    return false;
+  } else {
+    return true;
+  }
+}
+
+
